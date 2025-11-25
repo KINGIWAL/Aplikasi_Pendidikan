@@ -1,0 +1,5 @@
+[project]
+name = "PySide Widgets Project"
+
+[tool.pyside6-project]
+files = ["DB_Connection.py", "form_Admin.ui", "globals.py", "logic_Catatan.py", "logic_Login.py", "logic_Materi.py", "logic_Register.py", "logic_Student.py", "mainwindow.py", "path_manager.py"]

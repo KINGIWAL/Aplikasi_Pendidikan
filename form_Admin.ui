@@ -1,0 +1,2865 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+Background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255),stop: 0.5 rgb(19, 46, 53), stop:1 rgba(0, 0, 0, 255))
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget_Utama">
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="page_Login">
+       <layout class="QHBoxLayout" name="horizontalLayout_8">
+        <item>
+         <widget class="QWidget" name="widget_Login" native="true">
+          <property name="maximumSize">
+           <size>
+            <width>450</width>
+            <height>600</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QWidget{
+background-color: rgba(0,0,0, 90);
+border-radius:15px;
+}</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="0" column="1">
+            <spacer name="verticalSpacer_9">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Policy::Maximum</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>13</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLabel" name="label_3">
+             <property name="maximumSize">
+              <size>
+               <width>200</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+    qproperty-alignment: 'AlignLeft';
+    color: white;
+    background-color: none;
+    font-size: 20px;
+	font-weight:bold;
+    border-radius: 10px;
+}</string>
+             </property>
+             <property name="text">
+              <string>Username</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <spacer name="horizontalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Policy::Maximum</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>32</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="8" column="1">
+            <widget class="QPushButton" name="btnDaftar">
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+    qproperty-alignment: AlignCenter;
+    background-color:#11212D;
+    font-size: 20px;
+	font-weight:bold;
+	border-radius: 10px;
+	color:white;
+	padding:10px;
+}
+QPushButton:hover{
+  background-color:#4A5C6A;
+}</string>
+             </property>
+             <property name="text">
+              <string>Daftar</string>
+             </property>
+             <property name="checkable">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <spacer name="verticalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Policy::Maximum</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="4" column="1">
+            <widget class="QLineEdit" name="lineEdit_LoginUsername">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	background-color:#06141D;
+    font-size: 25px;
+	border-radius: 10px;
+	color:white;
+	Padding:10px;
+}
+QLineEdit:focus{
+    border: 2px solid rgb(25, 201, 255); 
+    background-color: #253745;
+}</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="1">
+            <spacer name="verticalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Policy::Maximum</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="label">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+    qproperty-alignment: AlignCenter;
+    color: white;
+    background-color: none;
+    font-size: 50px;
+	font-weight:bold;
+    border-radius: 10px;
+}</string>
+             </property>
+             <property name="text">
+              <string>LOGIN</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="2">
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Policy::Maximum</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>32</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="6" column="1">
+            <widget class="QLineEdit" name="lineEdit_LoginPassword">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	background-color:#06141D;
+    font-size: 25px;
+	border-radius: 10px;
+	color:white;
+	Padding:10px;
+}
+QLineEdit:focus{
+    border: 2px solid rgb(25, 201, 255); 
+    background-color: #253745;
+}</string>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::EchoMode::Password</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QLabel" name="label_2">
+             <property name="maximumSize">
+              <size>
+               <width>200</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+    qproperty-alignment: 'AlignLeft';
+    color: white;
+    background-color: none;
+    font-size: 20px;
+	font-weight:bold;
+    border-radius: 10px;
+}</string>
+             </property>
+             <property name="text">
+              <string>Password</string>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="1">
+            <widget class="QPushButton" name="btnLogin">
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+    qproperty-alignment: AlignCenter;
+    background-color:#11212D;
+    font-size: 20px;
+	font-weight:bold;
+	border-radius: 10px;
+	color:white;
+	padding:10px;
+}
+QPushButton:hover{
+  background-color:#4A5C6A;
+}</string>
+             </property>
+             <property name="text">
+              <string>Submit</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_Daftar">
+       <layout class="QHBoxLayout" name="horizontalLayout_11">
+        <item>
+         <widget class="QWidget" name="widget_Daftar" native="true">
+          <property name="maximumSize">
+           <size>
+            <width>450</width>
+            <height>831</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QWidget{
+background-color: rgba(0,0,0, 90);
+border-radius:15px;
+}</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="16" column="1">
+            <widget class="QPushButton" name="btnKembali">
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+    qproperty-alignment: AlignCenter;
+    background-color:#11212D;
+    font-size: 20px;
+	font-weight:bold;
+	border-radius: 10px;
+	color:white;
+	padding:10px;
+}
+QPushButton:hover{
+  background-color:#4A5C6A;
+}</string>
+             </property>
+             <property name="text">
+              <string>Kembali</string>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="1">
+            <widget class="QLineEdit" name="lineEdit_Password">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	background-color:#06141D;
+    font-size: 25px;
+	border-radius: 10px;
+	color:white;
+	Padding:10px;
+}
+QLineEdit:focus{
+    border: 2px solid rgb(25, 201, 255); 
+    background-color: #253745;
+}</string>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::EchoMode::Password</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="14" column="1">
+            <widget class="QPushButton" name="btnRegister">
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+    qproperty-alignment: AlignCenter;
+    background-color:#11212D;
+    font-size: 20px;
+	font-weight:bold;
+	border-radius: 10px;
+	color:white;
+	padding:10px;
+}
+QPushButton:hover{
+  background-color:#4A5C6A;
+}</string>
+             </property>
+             <property name="text">
+              <string>Submit</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QLabel" name="label_8">
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+    qproperty-alignment: 'AlignLeft';
+    color: white;
+    background-color: none;
+    font-size: 20px;
+	font-weight:bold;
+    border-radius: 10px;
+}</string>
+             </property>
+             <property name="text">
+              <string>Email</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLabel" name="label_7">
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+    qproperty-alignment: 'AlignLeft';
+    color: white;
+    background-color: none;
+    font-size: 20px;
+	font-weight:bold;
+    border-radius: 10px;
+}</string>
+             </property>
+             <property name="text">
+              <string>Nama Lengkap</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="1">
+            <widget class="QLabel" name="label_5">
+             <property name="maximumSize">
+              <size>
+               <width>200</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+    qproperty-alignment: 'AlignLeft';
+    color: white;
+    background-color: none;
+    font-size: 20px;
+	font-weight:bold;
+    border-radius: 10px;
+}</string>
+             </property>
+             <property name="text">
+              <string>Username</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="1">
+            <widget class="QLineEdit" name="lineEdit_Username">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	background-color:#06141D;
+    font-size: 25px;
+	border-radius: 10px;
+	color:white;
+	Padding:10px;
+}
+QLineEdit:focus{
+    border: 2px solid rgb(25, 201, 255); 
+    background-color: #253745;
+}</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="0">
+            <spacer name="horizontalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Policy::Maximum</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>32</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="9" column="1">
+            <widget class="QLabel" name="label_6">
+             <property name="maximumSize">
+              <size>
+               <width>200</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+    qproperty-alignment: 'AlignLeft';
+    color: white;
+    background-color: none;
+    font-size: 20px;
+	font-weight:bold;
+    border-radius: 10px;
+}</string>
+             </property>
+             <property name="text">
+              <string>Password</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="label_4">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+    qproperty-alignment: AlignCenter;
+    color: white;
+    background-color: none;
+    font-size: 50px;
+font-weight:bold;
+
+    border-radius: 10px;
+}</string>
+             </property>
+             <property name="text">
+              <string>REGISTER</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <spacer name="verticalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Policy::Maximum</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="12" column="1">
+            <widget class="QLineEdit" name="lineEdit_Verification">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	background-color:#06141D;
+    font-size: 25px;
+	border-radius: 10px;
+	color:white;
+	Padding:10px;
+}
+QLineEdit:focus{
+    border: 2px solid rgb(25, 201, 255); 
+    background-color: #253745;
+}</string>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::EchoMode::Password</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <spacer name="verticalSpacer_10">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>13</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="8" column="2">
+            <spacer name="horizontalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Policy::Maximum</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>32</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="17" column="1">
+            <spacer name="verticalSpacer_8">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="13" column="1">
+            <spacer name="verticalSpacer_7">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Policy::Maximum</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="6" column="1">
+            <widget class="QLineEdit" name="lineEdit_Email">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	background-color:#06141D;
+    font-size: 25px;
+	border-radius: 10px;
+	color:white;
+	Padding:10px;
+}
+QLineEdit:focus{
+    border: 2px solid rgb(25, 201, 255); 
+    background-color: #253745;
+}</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QLineEdit" name="lineEdit_NamaLengkap">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	background-color:#06141D;
+    font-size: 25px;
+	border-radius: 10px;
+	color:white;
+	Padding:10px;
+}
+QLineEdit:focus{
+    border: 2px solid rgb(25, 201, 255); 
+    background-color: #253745;
+}</string>
+             </property>
+            </widget>
+           </item>
+           <item row="11" column="1">
+            <widget class="QLabel" name="label_9">
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+    qproperty-alignment: 'AlignLeft';
+    color: white;
+    background-color: none;
+    font-size: 20px;
+	font-weight:bold;
+    border-radius: 10px;
+}</string>
+             </property>
+             <property name="text">
+              <string>verification</string>
+             </property>
+            </widget>
+           </item>
+           <item row="15" column="1">
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Policy::Maximum</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>15</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_Main">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QWidget" name="widget" native="true">
+              <property name="maximumSize">
+               <size>
+                <width>450</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QWidget{
+background-color: rgba(0,0,0, 90);
+border-radius:12px;
+}</string>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_4">
+               <item>
+                <widget class="QWidget" name="widget_2" native="true">
+                 <layout class="QHBoxLayout" name="horizontalLayout_5">
+                  <item>
+                   <widget class="QWidget" name="SideBarSmall" native="true">
+                    <property name="styleSheet">
+                     <string notr="true">QWidget{
+background-color:rgb(19, 46, 53);
+border-radius:12px;
+}</string>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_15">
+                     <property name="leftMargin">
+                      <number>11</number>
+                     </property>
+                     <item>
+                      <widget class="QPushButton" name="btnBeranda">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>57</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>60</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">QPushButton {
+	qproperty-alignment: AlignLeft;
+	background-color:#0D171A;
+    border-radius: 8px;
+	font-weight:bold;
+	font-size:20px;
+	font-family: &quot;Century Gothic&quot;;
+	padding :10px;
+	
+}
+
+QPushButton:hover {
+    background-color: rgb(197, 197, 197);
+	color:rgb(33, 57, 37);
+}
+
+
+</string>
+                       </property>
+                       <property name="text">
+                        <string>Beranda</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="verticalSpacer_11">
+                       <property name="orientation">
+                        <enum>Qt::Orientation::Vertical</enum>
+                       </property>
+                       <property name="sizeType">
+                        <enum>QSizePolicy::Policy::Maximum</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>20</width>
+                         <height>136</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="btnMateri">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>57</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>60</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">QPushButton {
+	qproperty-alignment: AlignLeft;
+	background-color:#0D171A;
+    border-radius: 8px;
+	font-weight:bold;
+	font-size:20px;
+	font-family: &quot;Century Gothic&quot;;
+	padding :10px;
+	
+}
+
+QPushButton:hover {
+    background-color: rgb(197, 197, 197);
+	color:rgb(33, 57, 37);
+}
+
+
+</string>
+                       </property>
+                       <property name="text">
+                        <string>Materi</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="verticalSpacer_3">
+                       <property name="orientation">
+                        <enum>Qt::Orientation::Vertical</enum>
+                       </property>
+                       <property name="sizeType">
+                        <enum>QSizePolicy::Policy::Maximum</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>20</width>
+                         <height>136</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="btnCatatan">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>57</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>60</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">QPushButton {
+	qproperty-alignment: AlignLeft;
+	background-color:#0D171A;
+    border-radius: 8px;
+	font-weight:bold;
+	font-size:20px;
+	font-family: &quot;Century Gothic&quot;;
+	padding :10px;
+	
+}
+
+QPushButton:hover {
+    background-color: rgb(197, 197, 197);
+	color:rgb(33, 57, 37);
+}
+
+
+</string>
+                       </property>
+                       <property name="text">
+                        <string>Catatan</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="verticalSpacer_2">
+                       <property name="orientation">
+                        <enum>Qt::Orientation::Vertical</enum>
+                       </property>
+                       <property name="sizeType">
+                        <enum>QSizePolicy::Policy::Maximum</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>20</width>
+                         <height>136</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="btnStudent">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>57</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">QPushButton {
+	qproperty-alignment: AlignLeft;
+	background-color:#0D171A;
+    border-radius: 8px;
+	font-weight:bold;
+	font-size:20px;
+	font-family: &quot;Century Gothic&quot;;
+	padding :10px;
+	
+}
+
+QPushButton:hover {
+    background-color: rgb(197, 197, 197);
+	color:rgb(33, 57, 37);
+}
+
+
+</string>
+                       </property>
+                       <property name="text">
+                        <string>Student</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="verticalSpacer_13">
+                       <property name="orientation">
+                        <enum>Qt::Orientation::Vertical</enum>
+                       </property>
+                       <property name="sizeType">
+                        <enum>QSizePolicy::Policy::Maximum</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>20</width>
+                         <height>136</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="btnQuis">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>57</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">QPushButton {
+	qproperty-alignment: AlignLeft;
+	background-color:#0D171A;
+    border-radius: 8px;
+	font-weight:bold;
+	font-size:20px;
+	font-family: &quot;Century Gothic&quot;;
+	padding :10px;
+	
+}
+
+QPushButton:hover {
+    background-color: rgb(197, 197, 197);
+	color:rgb(33, 57, 37);
+}
+
+
+</string>
+                       </property>
+                       <property name="text">
+                        <string>Quis</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="verticalSpacer_12">
+                       <property name="orientation">
+                        <enum>Qt::Orientation::Vertical</enum>
+                       </property>
+                       <property name="sizeType">
+                        <enum>QSizePolicy::Policy::Maximum</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>20</width>
+                         <height>500</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="btnLogout">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>57</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">QPushButton {
+	qproperty-alignment: AlignLeft;
+	background-color:#0D171A;
+    border-radius: 8px;
+	font-weight:bold;
+	font-size:20px;
+	font-family: &quot;Century Gothic&quot;;
+	padding :10px;
+	
+}
+
+QPushButton:hover {
+    background-color: rgb(197, 197, 197);
+	color:rgb(33, 57, 37);
+}
+
+
+</string>
+                       </property>
+                       <property name="text">
+                        <string>Logout</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QStackedWidget" name="stackedWidget_Sidebar">
+                    <property name="styleSheet">
+                     <string notr="true">QWidget{
+background-color: rgba(0,0,0, 90);
+border-radius:12px;
+}</string>
+                    </property>
+                    <property name="currentIndex">
+                     <number>1</number>
+                    </property>
+                    <widget class="QWidget" name="page_Sidebar_Beranda">
+                     <layout class="QVBoxLayout" name="verticalLayout_19">
+                      <item>
+                       <widget class="QPushButton" name="btnBeranda_2">
+                        <property name="maximumSize">
+                         <size>
+                          <width>16777215</width>
+                          <height>60</height>
+                         </size>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">QPushButton {
+	background-color: rgba(0,0,0,0);
+	color:white;
+    border-radius: 15px;
+	font-weight:bold;
+	font-size:30px;
+	padding:10px;
+}
+
+
+
+</string>
+                        </property>
+                        <property name="text">
+                         <string>Beranda</string>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>40</width>
+                          <height>40</height>
+                         </size>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="btnTambah">
+                        <property name="styleSheet">
+                         <string notr="true">QPushButton{
+	background-color:#2D4A53;
+	border-radius:15px;
+	color :#AFB3B7;
+	padding:15px;
+	font-weight:bold;
+	font-size:20px;
+}
+QPushButton:hover{
+	background-color:#0D1F23;
+}</string>
+                        </property>
+                        <property name="text">
+                         <string>+</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QScrollArea" name="scrollArea_Sidebar_Materi_2">
+                        <property name="widgetResizable">
+                         <bool>true</bool>
+                        </property>
+                        <property name="alignment">
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
+                        </property>
+                        <widget class="QWidget" name="scrollAreaWidgetContents_12">
+                         <property name="geometry">
+                          <rect>
+                           <x>0</x>
+                           <y>0</y>
+                           <width>78</width>
+                           <height>24</height>
+                          </rect>
+                         </property>
+                         <layout class="QVBoxLayout" name="verticalLayout_41">
+                          <item>
+                           <layout class="QVBoxLayout" name="verticalLayout_Sidebar_Materi_2"/>
+                          </item>
+                         </layout>
+                        </widget>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                    <widget class="QWidget" name="page_Sidebar_Quis">
+                     <layout class="QVBoxLayout" name="verticalLayout_17">
+                      <item>
+                       <widget class="QPushButton" name="btnLabelQuis">
+                        <property name="maximumSize">
+                         <size>
+                          <width>16777215</width>
+                          <height>60</height>
+                         </size>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">QPushButton {
+	background-color: rgba(0,0,0,0);
+	color:white;
+    border-radius: 15px;
+	font-weight:bold;
+	font-size:30px;
+	padding:10px;
+}
+
+
+
+</string>
+                        </property>
+                        <property name="text">
+                         <string>Quis</string>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>40</width>
+                          <height>40</height>
+                         </size>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="btnTambah_Quis">
+                        <property name="styleSheet">
+                         <string notr="true">QPushButton{
+	background-color:#2D4A53;
+	border-radius:15px;
+	color :white;
+	padding:15px;
+	font-weight:bold;
+	font-size:20px;
+}
+QPushButton:hover{
+	background-color:#0D1F23;
+}</string>
+                        </property>
+                        <property name="text">
+                         <string>+</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QScrollArea" name="scrollArea_Sidebar_Quis">
+                        <property name="widgetResizable">
+                         <bool>true</bool>
+                        </property>
+                        <property name="alignment">
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
+                        </property>
+                        <widget class="QWidget" name="scrollAreaWidgetContents_13">
+                         <property name="geometry">
+                          <rect>
+                           <x>0</x>
+                           <y>0</y>
+                           <width>253</width>
+                           <height>835</height>
+                          </rect>
+                         </property>
+                         <layout class="QVBoxLayout" name="verticalLayout_43">
+                          <item>
+                           <layout class="QVBoxLayout" name="verticalLayout_Sidebar_Quis"/>
+                          </item>
+                         </layout>
+                        </widget>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                    <widget class="QWidget" name="page_Sidebar_Student">
+                     <layout class="QVBoxLayout" name="verticalLayout_16">
+                      <item>
+                       <widget class="QPushButton" name="pushButton_38">
+                        <property name="styleSheet">
+                         <string notr="true">QPushButton {
+	background-color: rgba(0,0,0,0);
+	color:white;
+    border-radius: 15px;
+	font-weight:bold;
+	font-size:30px;
+	padding:10px;
+}
+
+
+
+</string>
+                        </property>
+                        <property name="text">
+                         <string>Student</string>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>40</width>
+                          <height>40</height>
+                         </size>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QScrollArea" name="scrollArea">
+                        <property name="widgetResizable">
+                         <bool>true</bool>
+                        </property>
+                        <property name="alignment">
+                         <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignTop</set>
+                        </property>
+                        <widget class="QWidget" name="scrollAreaWidgetContents_Student">
+                         <property name="geometry">
+                          <rect>
+                           <x>0</x>
+                           <y>0</y>
+                           <width>78</width>
+                           <height>24</height>
+                          </rect>
+                         </property>
+                         <layout class="QVBoxLayout" name="verticalLayout_28">
+                          <item>
+                           <layout class="QVBoxLayout" name="verticalLayout_Sidebar_Student"/>
+                          </item>
+                         </layout>
+                        </widget>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                    <widget class="QWidget" name="page_Sidebar_Catatan">
+                     <layout class="QVBoxLayout" name="verticalLayout_3">
+                      <item>
+                       <widget class="QPushButton" name="btnCatatan_2">
+                        <property name="maximumSize">
+                         <size>
+                          <width>16777215</width>
+                          <height>60</height>
+                         </size>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">QPushButton {
+	background-color: rgba(0,0,0,0);
+	color:white;
+    border-radius: 15px;
+	font-weight:bold;
+	font-size:30px;
+	padding:10px;
+}
+
+
+
+</string>
+                        </property>
+                        <property name="text">
+                         <string>Catatan</string>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>40</width>
+                          <height>40</height>
+                         </size>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="btnTambah_Catatan">
+                        <property name="styleSheet">
+                         <string notr="true">QPushButton{
+	background-color:#2D4A53;
+	border-radius:15px;
+	color :#AFB3B7;
+	padding:15px;
+	font-weight:bold;
+	font-size:20px;
+}
+QPushButton:hover{
+	background-color:#0D1F23;
+}</string>
+                        </property>
+                        <property name="text">
+                         <string>+</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QScrollArea" name="scrollArea_Sidebar_Materi_3">
+                        <property name="widgetResizable">
+                         <bool>true</bool>
+                        </property>
+                        <property name="alignment">
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
+                        </property>
+                        <widget class="QWidget" name="scrollAreaWidgetContents_Catatan">
+                         <property name="geometry">
+                          <rect>
+                           <x>0</x>
+                           <y>0</y>
+                           <width>78</width>
+                           <height>24</height>
+                          </rect>
+                         </property>
+                         <layout class="QVBoxLayout" name="verticalLayout_42">
+                          <item>
+                           <layout class="QVBoxLayout" name="verticalLayout_Sidebar_Catatan"/>
+                          </item>
+                         </layout>
+                        </widget>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                    <widget class="QWidget" name="page_Sidebar_Materi">
+                     <layout class="QVBoxLayout" name="verticalLayout_7">
+                      <item>
+                       <widget class="QPushButton" name="btnMateri_2">
+                        <property name="maximumSize">
+                         <size>
+                          <width>16777215</width>
+                          <height>60</height>
+                         </size>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">QPushButton {
+	background-color: rgba(0,0,0,0);
+	color:white;
+    border-radius: 15px;
+	font-weight:bold;
+	font-size:30px;
+	padding:10px;
+}
+
+
+
+</string>
+                        </property>
+                        <property name="text">
+                         <string> Materi</string>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>40</width>
+                          <height>40</height>
+                         </size>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="btnTambah_Materi">
+                        <property name="maximumSize">
+                         <size>
+                          <width>16777215</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">QPushButton{
+	background-color:#2D4A53;
+	border-radius:15px;
+	color :#AFB3B7;
+	padding:15px;
+	font-weight:bold;
+	font-size:20px;
+}
+QPushButton:hover{
+	background-color:#0D1F23;
+}</string>
+                        </property>
+                        <property name="text">
+                         <string>+</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QScrollArea" name="scrollArea_Sidebar_Materi">
+                        <property name="widgetResizable">
+                         <bool>true</bool>
+                        </property>
+                        <property name="alignment">
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
+                        </property>
+                        <widget class="QWidget" name="scrollAreaWidgetContents_11">
+                         <property name="geometry">
+                          <rect>
+                           <x>0</x>
+                           <y>0</y>
+                           <width>78</width>
+                           <height>24</height>
+                          </rect>
+                         </property>
+                         <layout class="QVBoxLayout" name="verticalLayout_38">
+                          <item>
+                           <layout class="QVBoxLayout" name="verticalLayout_Sidebar_Materi"/>
+                          </item>
+                         </layout>
+                        </widget>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <widget class="QStackedWidget" name="stackedWidget_Main">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::LayoutDirection::LeftToRight</enum>
+              </property>
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QWidget{
+background-color: rgba(0,0,0, 90);
+border-radius:12px;
+}</string>
+              </property>
+              <property name="currentIndex">
+               <number>6</number>
+              </property>
+              <widget class="QWidget" name="page_Main_Input_Materi">
+               <property name="styleSheet">
+                <string notr="true">QWidget{
+    background: qlineargradient(
+        x2:0, y1:1,
+        x2:1, y2:1,
+        stop:0 #040e0f,
+        stop:1 #054247
+    );
+    font-family: &quot;Century Gothic&quot;;
+    font-size: 15px;
+    color: #E9FFFF;
+
+    border-radius: 10px;
+
+}</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_10">
+                <item>
+                 <widget class="QScrollArea" name="scrollArea_5">
+                  <property name="widgetResizable">
+                   <bool>true</bool>
+                  </property>
+                  <widget class="QWidget" name="scrollAreaWidgetContents_2">
+                   <property name="geometry">
+                    <rect>
+                     <x>0</x>
+                     <y>0</y>
+                     <width>206</width>
+                     <height>261</height>
+                    </rect>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_12">
+                    <item>
+                     <widget class="QWidget" name="widget_Input_Materi2" native="true">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>123</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QWidget{
+background-color: rgba(0,0,0, 90);
+	border-radius:12px;
+	font-size:18px;
+	padding :5px;
+	color:white;
+}</string>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_21">
+                       <item>
+                        <widget class="QLabel" name="label_15">
+                         <property name="styleSheet">
+                          <string notr="true">QLabel {
+	background-color: rgba(0,0,0,0);
+	color:white;
+    border-radius: 15px;
+	font-weight:bold;
+	font-size:20px;
+}
+
+
+
+</string>
+                         </property>
+                         <property name="text">
+                          <string>Nama Folder</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_10">
+                         <item>
+                          <widget class="QComboBox" name="comboBox_folder_Materi">
+                           <property name="maximumSize">
+                            <size>
+                             <width>16777215</width>
+                             <height>16777215</height>
+                            </size>
+                           </property>
+                           <property name="sizeIncrement">
+                            <size>
+                             <width>0</width>
+                             <height>0</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QComboBox {
+	qproperty-alignment: AlignCenter;
+	background-color:#06141D;
+    font-size: 25px;
+	border-radius: 10px;
+	color:white;
+	Padding:10px;
+}
+QComboBox:focus{
+    border: 2px solid rgb(25, 201, 255); 
+    background-color: #253745;
+}
+ QComboBox QAbstractItemView {
+	qproperty-alignment: AlignCenter;
+	background-color:Black;
+    font-size: 25px;
+	border-radius: 10px;
+	color:white;
+	Padding:10px;
+}</string>
+                           </property>
+                           <property name="editable">
+                            <bool>true</bool>
+                           </property>
+                           <property name="placeholderText">
+                            <string>Isi folder ...</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QWidget" name="widget_Input_Materi" native="true">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QWidget{
+background-color: rgba(0,0,0, 90);
+	border-radius:12px;
+	font-size:18px;
+	padding :5px;
+	color:white;
+}</string>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_22">
+                       <item>
+                        <widget class="QScrollArea" name="scrollArea_Input_materi">
+                         <property name="styleSheet">
+                          <string notr="true">QScrollArea{
+background-color:rgba(0,0,0,0);
+}</string>
+                         </property>
+                         <property name="widgetResizable">
+                          <bool>true</bool>
+                         </property>
+                         <widget class="QWidget" name="scrollAreaWidgetContents_4">
+                          <property name="geometry">
+                           <rect>
+                            <x>0</x>
+                            <y>0</y>
+                            <width>147</width>
+                            <height>962</height>
+                           </rect>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_9">
+                           <item>
+                            <widget class="QLabel" name="label_judul">
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>36</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QLabel {
+	background-color: rgba(0,0,0,0);
+	color:white;
+    border-radius: 15px;
+	font-weight:bold;
+	font-size:20px;
+}
+
+
+
+</string>
+                             </property>
+                             <property name="text">
+                              <string>Judul</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLineEdit" name="lineEdit_Judul">
+                             <property name="styleSheet">
+                              <string notr="true">QLineEdit{
+	background-color:#06141D;
+    font-size: 25px;
+	border-radius: 10px;
+	color:white;
+	Padding:10px;
+}
+QLineEdit:focus{
+    border: 2px solid rgb(25, 201, 255); 
+    background-color: #253745;
+}</string>
+                             </property>
+                             <property name="placeholderText">
+                              <string>... Judul ...</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_materi">
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>36</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QLabel {
+	background-color: rgba(0,0,0,0);
+	color:white;
+    border-radius: 15px;
+	font-weight:bold;
+	font-size:20px;
+}
+
+
+
+</string>
+                             </property>
+                             <property name="text">
+                              <string>Materi</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QTextEdit" name="textEdit_Materi">
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>300</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QTextEdit{
+	 qproperty-alignment: AlignLeft;
+	background-color:#06141D;
+    font-size: 12px;
+	border-radius: 10px;
+	color:white;
+	Padding:10px;
+}
+QTextEdit:focus{
+    border: 2px solid rgb(25, 201, 255); 
+    background-color: #253745;
+}</string>
+                             </property>
+                             <property name="autoFormatting">
+                              <set>QTextEdit::AutoFormattingFlag::AutoNone</set>
+                             </property>
+                             <property name="lineWrapMode">
+                              <enum>QTextEdit::LineWrapMode::WidgetWidth</enum>
+                             </property>
+                             <property name="lineWrapColumnOrWidth">
+                              <number>-2</number>
+                             </property>
+                             <property name="placeholderText">
+                              <string>Isi Materi ...</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_contoh">
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>36</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QLabel {
+	background-color: rgba(0,0,0,0);
+	color:white;
+    border-radius: 15px;
+	font-weight:bold;
+	font-size:20px;
+}
+
+
+
+</string>
+                             </property>
+                             <property name="text">
+                              <string>Contoh</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QTextEdit" name="textEdit_Contoh">
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>300</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QTextEdit{
+	 qproperty-alignment: AlignLeft;
+	background-color:#06141D;
+    font-size: 12px;
+	border-radius: 10px;
+	color:white;
+	Padding:10px;
+}
+QTextEdit:focus{
+    border: 2px solid rgb(25, 201, 255); 
+    background-color: #253745;
+}</string>
+                             </property>
+                             <property name="lineWrapMode">
+                              <enum>QTextEdit::LineWrapMode::WidgetWidth</enum>
+                             </property>
+                             <property name="lineWrapColumnOrWidth">
+                              <number>-2</number>
+                             </property>
+                             <property name="placeholderText">
+                              <string>Isi Contoh ...</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_peringatan">
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>37</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QLabel {
+	background-color: rgba(0,0,0,0);
+	color:white;
+    border-radius: 15px;
+	font-weight:bold;
+	font-size:20px;
+}
+
+
+
+</string>
+                             </property>
+                             <property name="text">
+                              <string>Peringatan</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QTextEdit" name="textEdit_Peringatan">
+                             <property name="styleSheet">
+                              <string notr="true">QTextEdit{
+	 qproperty-alignment: AlignLeft;
+	background-color:#06141D;
+    font-size: 12px;
+	border-radius: 10px;
+	color:white;
+	Padding:10px;
+}
+QTextEdit:focus{
+    border: 2px solid rgb(25, 201, 255); 
+    background-color: #253745;
+}</string>
+                             </property>
+                             <property name="lineWrapMode">
+                              <enum>QTextEdit::LineWrapMode::WidgetWidth</enum>
+                             </property>
+                             <property name="lineWrapColumnOrWidth">
+                              <number>-2</number>
+                             </property>
+                             <property name="placeholderText">
+                              <string>Isi Peringatan ...</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_16">
+                  <item>
+                   <widget class="QWidget" name="widget_5" native="true">
+                    <layout class="QHBoxLayout" name="horizontalLayout_7">
+                     <item>
+                      <widget class="QPushButton" name="btnSimpan_Materi">
+                       <property name="maximumSize">
+                        <size>
+                         <width>300</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">QPushButton{
+	background-color:rgb(19, 46, 53);
+	border-radius:15px;
+	color :#AFB3B7;
+	padding:15px;
+	font-weight:bold;
+	font-size:20px;
+}
+QPushButton:hover{
+	background-color:#0D1F23;
+}</string>
+                       </property>
+                       <property name="text">
+                        <string>Simpan</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="page_Main_Materi">
+               <property name="styleSheet">
+                <string notr="true">QWidget{
+    background: qlineargradient(
+        x2:0, y1:1,
+        x2:1, y2:1,
+        stop:0 #040e0f,
+        stop:1 #054247
+    );
+    font-family: &quot;Century Gothic&quot;;
+    font-size: 15px;
+    color: #E9FFFF;
+
+    border-radius: 10px;
+
+}</string>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_6">
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_Materi">
+                  <item>
+                   <widget class="QWidget" name="widget_4" native="true">
+                    <property name="minimumSize">
+                     <size>
+                      <width>467</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="LayoutMateri">
+                  <item>
+                   <widget class="QWidget" name="widgetSubBabMateri" native="true">
+                    <property name="maximumSize">
+                     <size>
+                      <width>300</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QWidget{
+background-color:#0D171A;
+border-radius:12px;
+}</string>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_2">
+                     <item>
+                      <widget class="QScrollArea" name="scrollArea_JudulMateri">
+                       <property name="widgetResizable">
+                        <bool>true</bool>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+                       </property>
+                       <widget class="QWidget" name="scrollAreaWidgetContents_5">
+                        <property name="geometry">
+                         <rect>
+                          <x>0</x>
+                          <y>0</y>
+                          <width>24</width>
+                          <height>24</height>
+                         </rect>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_4">
+                         <item>
+                          <layout class="QVBoxLayout" name="verticalLayout_JudulMateri"/>
+                         </item>
+                        </layout>
+                       </widget>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="page_Main_Quis">
+               <property name="styleSheet">
+                <string notr="true">QWidget{
+    background: qlineargradient(
+        x2:0, y1:1,
+        x2:1, y2:1,
+        stop:0 #040e0f,
+        stop:1 #054247
+    );
+    font-family: &quot;Century Gothic&quot;;
+    font-size: 15px;
+    color: #E9FFFF;
+
+    border-radius: 10px;
+
+}</string>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_14">
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_25">
+                  <item>
+                   <widget class="QWidget" name="widget_6" native="true">
+                    <property name="minimumSize">
+                     <size>
+                      <width>590</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_32">
+                     <item>
+                      <widget class="QScrollArea" name="scrollArea_3">
+                       <property name="widgetResizable">
+                        <bool>true</bool>
+                       </property>
+                       <widget class="QWidget" name="scrollAreaWidgetContents_7">
+                        <property name="geometry">
+                         <rect>
+                          <x>0</x>
+                          <y>0</y>
+                          <width>568</width>
+                          <height>24</height>
+                         </rect>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_34">
+                         <item>
+                          <layout class="QVBoxLayout" name="verticalLayout_Tanya_Jawab"/>
+                         </item>
+                        </layout>
+                       </widget>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_26">
+                  <item>
+                   <widget class="QWidget" name="widgetSubBabQuis" native="true">
+                    <property name="maximumSize">
+                     <size>
+                      <width>300</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QWidget{
+background-color:#0D171A;
+border-radius:12px;
+}</string>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_27">
+                     <item>
+                      <widget class="QScrollArea" name="scrollArea_Quis_2">
+                       <property name="widgetResizable">
+                        <bool>true</bool>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+                       </property>
+                       <widget class="QWidget" name="scrollAreaWidgetContents_6">
+                        <property name="geometry">
+                         <rect>
+                          <x>0</x>
+                          <y>0</y>
+                          <width>24</width>
+                          <height>24</height>
+                         </rect>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_30">
+                         <item>
+                          <layout class="QVBoxLayout" name="verticalLayout_Soal_Quis"/>
+                         </item>
+                        </layout>
+                       </widget>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="page_Main_Student">
+               <property name="styleSheet">
+                <string notr="true">QWidget{
+    background: qlineargradient(
+        x2:0, y1:1,
+        x2:1, y2:1,
+        stop:0 #040e0f,
+        stop:1 #054247
+    );
+    font-family: &quot;Century Gothic&quot;;
+    font-size: 15px;
+    color: #E9FFFF;
+
+    border-radius: 10px;
+
+}</string>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_12">
+                <item>
+                 <widget class="QWidget" name="widget_Register_Student" native="true">
+                  <property name="maximumSize">
+                   <size>
+                    <width>450</width>
+                    <height>831</height>
+                   </size>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_6">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>38</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>38</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="label_10">
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>26</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QLabel{
+    qproperty-alignment: 'AlignLeft';
+    color: white;
+    background-color: none;
+    font-size: 20px;
+	font-weight:bold;
+    border-radius: 10px;
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>Nama Lengkap</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit_NamaLengkap_2">
+                     <property name="styleSheet">
+                      <string notr="true">QLineEdit{
+	background-color:#06141D;
+    font-size: 25px;
+	border-radius: 10px;
+	color:white;
+	Padding:10px;
+}
+QLineEdit:focus{
+    border: 2px solid rgb(25, 201, 255); 
+    background-color: #253745;
+}</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_11">
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>26</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QLabel{
+    qproperty-alignment: 'AlignLeft';
+    color: white;
+    background-color: none;
+    font-size: 20px;
+	font-weight:bold;
+    border-radius: 10px;
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>Username</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit_Username_2">
+                     <property name="styleSheet">
+                      <string notr="true">QLineEdit{
+	background-color:#06141D;
+    font-size: 25px;
+	border-radius: 10px;
+	color:white;
+	Padding:10px;
+}
+QLineEdit:focus{
+    border: 2px solid rgb(25, 201, 255); 
+    background-color: #253745;
+}</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_12">
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>26</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QLabel{
+    qproperty-alignment: 'AlignLeft';
+    color: white;
+    background-color: none;
+    font-size: 20px;
+	font-weight:bold;
+    border-radius: 10px;
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>Email</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit_Email_2">
+                     <property name="styleSheet">
+                      <string notr="true">QLineEdit{
+	background-color:#06141D;
+    font-size: 25px;
+	border-radius: 10px;
+	color:white;
+	Padding:10px;
+}
+QLineEdit:focus{
+    border: 2px solid rgb(25, 201, 255); 
+    background-color: #253745;
+}</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_13">
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>26</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QLabel{
+    qproperty-alignment: 'AlignLeft';
+    color: white;
+    background-color: none;
+    font-size: 20px;
+	font-weight:bold;
+    border-radius: 10px;
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>Password</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit_Password_2">
+                     <property name="styleSheet">
+                      <string notr="true">QLineEdit{
+	background-color:#06141D;
+    font-size: 25px;
+	border-radius: 10px;
+	color:white;
+	Padding:10px;
+}
+QLineEdit:focus{
+    border: 2px solid rgb(25, 201, 255); 
+    background-color: #253745;
+}</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="btnSimpan_Student">
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+    qproperty-alignment: AlignCenter;
+    background-color:#11212D;
+    font-size: 20px;
+	font-weight:bold;
+	border-radius: 10px;
+	color:white;
+	padding:10px;
+}
+QPushButton:hover{
+  background-color:#4A5C6A;
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>Simpan</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="page_Main_Input_Quis">
+               <property name="styleSheet">
+                <string notr="true">QWidget{
+    background: qlineargradient(
+        x2:0, y1:1,
+        x2:1, y2:1,
+        stop:0 #040e0f,
+        stop:1 #054247
+    );
+    font-family: &quot;Century Gothic&quot;;
+    font-size: 15px;
+    color: #E9FFFF;
+
+    border-radius: 10px;
+
+}</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_18">
+                <item>
+                 <widget class="QWidget" name="widget_Input_Nama_Latihan" native="true">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QWidget{
+background-color: rgba(0,0,0,0);
+	border-radius:12px;
+	font-size:18px;
+	padding :5px;
+	color:white;
+}</string>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_23">
+                   <item>
+                    <widget class="QLabel" name="label_17">
+                     <property name="styleSheet">
+                      <string notr="true">QLabel {
+	background-color: rgba(0,0,0,0);
+	color:white;
+    border-radius: 15px;
+	font-weight:bold;
+	font-size:20px;
+}
+
+
+
+</string>
+                     </property>
+                     <property name="text">
+                      <string>Kategori</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_13">
+                     <item>
+                      <widget class="QComboBox" name="comboBox_Nama_KategoriSoal">
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="sizeIncrement">
+                        <size>
+                         <width>0</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">QComboBox {
+	qproperty-alignment: AlignCenter;
+	background-color:#06141D;
+    font-size: 25px;
+	border-radius: 10px;
+	color:white;
+	Padding:10px;
+}
+QComboBox:focus{
+    border: 2px solid rgb(25, 201, 255); 
+    background-color: #253745;
+}
+ QComboBox QAbstractItemView {
+	qproperty-alignment: AlignCenter;
+	background-color:Black;
+    font-size: 25px;
+	border-radius: 10px;
+	color:white;
+	Padding:10px;
+}</string>
+                       </property>
+                       <property name="editable">
+                        <bool>true</bool>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Isi folder ...</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_18">
+                     <item>
+                      <layout class="QVBoxLayout" name="verticalLayout_29">
+                       <item>
+                        <widget class="QLabel" name="label_18">
+                         <property name="minimumSize">
+                          <size>
+                           <width>652</width>
+                           <height>0</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QLabel {
+	background-color: rgba(0,0,0,0);
+	color:white;
+    border-radius: 15px;
+	font-weight:bold;
+	font-size:20px;
+}
+
+
+
+</string>
+                         </property>
+                         <property name="text">
+                          <string>Nama Soal</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="lineEdit_Nama_Soal">
+                         <property name="minimumSize">
+                          <size>
+                           <width>652</width>
+                           <height>0</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QLineEdit{
+	background-color:#06141D;
+    font-size: 15px;
+	border-radius: 10px;
+	color:white;
+	Padding:10px;
+}
+QLineEdit:focus{
+    border: 2px solid rgb(25, 201, 255); 
+    background-color: #253745;
+}</string>
+                         </property>
+                         <property name="placeholderText">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                     <item>
+                      <layout class="QVBoxLayout" name="verticalLayout_24">
+                       <item>
+                        <widget class="QLabel" name="label_19">
+                         <property name="styleSheet">
+                          <string notr="true">QLabel {
+	background-color: rgba(0,0,0,0);
+	color:white;
+    border-radius: 15px;
+	font-weight:bold;
+	font-size:20px;
+}
+
+
+
+</string>
+                         </property>
+                         <property name="text">
+                          <string>Jumlah Soal</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_17">
+                         <item>
+                          <widget class="QLineEdit" name="lineEdit_JumlahSoal">
+                           <property name="styleSheet">
+                            <string notr="true">QLineEdit{
+	background-color:#06141D;
+    font-size: 15px;
+	border-radius: 10px;
+	color:white;
+	Padding:10px;
+}
+QLineEdit:focus{
+    border: 2px solid rgb(25, 201, 255); 
+    background-color: #253745;
+}</string>
+                           </property>
+                           <property name="placeholderText">
+                            <string/>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="btn_JumlahSoal">
+                           <property name="styleSheet">
+                            <string notr="true">QPushButton {
+	qproperty-alignment: AlignLeft;
+	background-color:#0D171A;
+    border-radius: 6px;
+	font-weight:bold;
+	font-size:15px;
+	padding :10px;
+	
+}
+
+QPushButton:hover {
+    background-color: rgba(0, 0, 0, 120);
+}
+
+
+</string>
+                           </property>
+                           <property name="text">
+                            <string>Submit</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                      </layout>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QScrollArea" name="scrollArea_Quis">
+                  <property name="widgetResizable">
+                   <bool>true</bool>
+                  </property>
+                  <widget class="QWidget" name="scrollAreaWidgetContents">
+                   <property name="geometry">
+                    <rect>
+                     <x>0</x>
+                     <y>0</y>
+                     <width>78</width>
+                     <height>24</height>
+                    </rect>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_20">
+                    <item>
+                     <layout class="QVBoxLayout" name="verticalLayout_Quis"/>
+                    </item>
+                   </layout>
+                  </widget>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_SimpanSoal">
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+	qproperty-alignment: AlignLeft;
+	background-color:#2D4A53;
+    border-radius: 6px;
+	font-weight:bold;
+	font-size:20px;
+	padding :10px;
+	
+}
+
+QPushButton:hover {
+    background-color: rgba(0, 0, 0, 120);
+}
+
+
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Simpan</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="page_Main_Catatan">
+               <layout class="QVBoxLayout" name="verticalLayout_40">
+                <item>
+                 <widget class="QWidget" name="widget_Main_Catatan" native="true">
+                  <property name="minimumSize">
+                   <size>
+                    <width>467</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QWidget{
+}</string>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_13">
+                   <item>
+                    <widget class="QLineEdit" name="judul_input">
+                     <property name="styleSheet">
+                      <string notr="true">QLineEdit{
+   background-color:#202f2f;
+   padding:10px;
+   font-size:20px;
+	font-family: &quot;Century Gothic&quot;;
+   font-weight:bold;
+   border-radius:3px;
+   color:white;
+}</string>
+                     </property>
+                     <property name="placeholderText">
+                      <string>Isi judul  ...</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QTextEdit" name="editor">
+                     <property name="styleSheet">
+                      <string notr="true">QTextEdit {
+    background: qlineargradient(
+        x2:0, y1:1,
+        x2:1, y2:1,
+        stop:0 #040e0f,
+        stop:1 #054247
+    );
+    padding: 22px;
+    font-family: &quot;Century Gothic&quot;;
+    font-size: 15px;
+    color: #E9FFFF;
+
+    border-radius: 10px;
+    border: 1px solid rgba(0,200,200,0.25);
+
+    selection-background-color: rgba(0,255,200,0.3);
+    selection-color: black;
+}
+</string>
+                     </property>
+                     <property name="placeholderText">
+                      <string>Tulis isi catatan ...</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_19">
+                     <item>
+                      <widget class="QPushButton" name="btn_Simpan_Catatan_dan_edit">
+                       <property name="styleSheet">
+                        <string notr="true">            QPushButton{
+                    background-color:rgb(19, 46, 53);
+                    border-radius:3px;
+                    color :White;
+                    font-weight:bold;
+                    font-size:13px;
+                    padding: 10px;
+                    border: 2px solid Gray;
+
+            }
+            QPushButton:hover{
+                    background-color:#0D1F23;
+                    border-color: rgb(76, 255, 228);
+                    font-size:18px;
+            }</string>
+                       </property>
+                       <property name="text">
+                        <string>Simpan</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="page_Main_Student_2">
+               <property name="styleSheet">
+                <string notr="true">QWidget{
+    background: qlineargradient(
+        x2:0, y1:1,
+        x2:1, y2:1,
+        stop:0 #040e0f,
+        stop:1 #054247
+    );
+    font-family: &quot;Century Gothic&quot;;
+    font-size: 15px;
+    color: #E9FFFF;
+
+    border-radius: 10px;
+
+}</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_14">
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_15">
+                  <item>
+                   <spacer name="horizontalSpacer_6">
+                    <property name="orientation">
+                     <enum>Qt::Orientation::Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                     <enum>QSizePolicy::Policy::Minimum</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>2</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="btnTambah_Student">
+                    <property name="maximumSize">
+                     <size>
+                      <width>40</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{
+	background-color:#2D4A53;
+	border-radius:15px;
+	color :white;
+	padding:15px;
+	font-weight:bold;
+	font-size:20px;
+}
+QPushButton:hover{
+	background-color:#0D1F23;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>+</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="btnEkspor_Student">
+                    <property name="maximumSize">
+                     <size>
+                      <width>129</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                    <property name="mouseTracking">
+                     <bool>true</bool>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{
+	background-color:#2D4A53;
+	border-radius:15px;
+	color :white;
+	padding:10px;
+	font-weight:bold;
+	font-size:16px;
+}
+QPushButton:hover{
+	background-color:#0D1F23;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Ekspor</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="horizontalSpacer">
+                    <property name="orientation">
+                     <enum>Qt::Orientation::Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                     <enum>QSizePolicy::Policy::Expanding</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>841</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QScrollArea" name="scrollArea_2">
+                  <property name="widgetResizable">
+                   <bool>true</bool>
+                  </property>
+                  <widget class="QWidget" name="scrollAreaWidgetContents_3">
+                   <property name="geometry">
+                    <rect>
+                     <x>0</x>
+                     <y>0</y>
+                     <width>976</width>
+                     <height>961</height>
+                    </rect>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_11">
+                    <item>
+                     <layout class="QVBoxLayout" name="verticalLayout_Main_Student"/>
+                    </item>
+                   </layout>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="page_Main_Beranda">
+               <layout class="QHBoxLayout" name="horizontalLayout_9">
+                <item>
+                 <widget class="QWidget" name="widget_3" native="true">
+                  <property name="maximumSize">
+                   <size>
+                    <width>1022</width>
+                    <height>500</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QWidget{
+background-color: rgba(0,0,0, 90);
+}</string>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_8">
+                   <item>
+                    <widget class="QLabel" name="label_16">
+                     <property name="maximumSize">
+                      <size>
+                       <width>1400</width>
+                       <height>600</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QLabel {
+    qproperty-alignment: AlignCenter;
+
+    background: qlineargradient(
+        x1:0, y1:0,
+        x2:1, y2:1,
+        stop:0 #040e0f,
+        stop:1 #054247
+    );
+
+    border-radius: 18px;
+    border: 2px solid rgba(0,255,230,150);  /* neon border */
+
+    font-family: &quot;Century Gothic&quot;;
+    font-size: 52px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgb(179, 247, 255));
+
+    padding: 25px;
+
+    /* Cyber Glow */
+    text-shadow: 0 0 10px rgba(0,255,255,0.8),
+                 0 0 25px rgba(0,180,255,0.6),
+                 0 0 40px rgba(0,150,255,0.4);
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>Welcome to the Informatics Learning Platform</string>
+                     </property>
+                     <property name="wordWrap">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

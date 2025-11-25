@@ -1,0 +1,21 @@
+# Folder environment
+venv/
+.venv/
+dist/
+Python_3_12_venv/
+catatan/
+build/
+
+# Cache Python
+__pycache__/
+*.pyc
+*.pyo
+*.qtcreator
+
+# File konfigurasi lokal
+*.json
+*.xlsx
+
+# File log
+*.log
+
