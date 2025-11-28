@@ -1,5 +1,17 @@
 import mysql.connector
+import socket
+from zeroconf import Zeroconf, ServiceBrowser, ServiceStateChange
 from pymongo import MongoClient
+
+
+def on_service_state_change(zeroconf, service_type, name, state_change):
+    if state_change is ServiceStateChange.Added:
+        info = zeroconf.get_service_info(service_type, name)
+        if info:
+            print(f"Service {name} ditemukan di {socket.inet_ntoa(info.addresses[0])}")
+
+zeroconf = Zeroconf()
+browser = ServiceBrowser(zeroconf, "_mongodb._tcp.local.", handlers=[on_service_state_change])
 
 #koneksi Mysql
 def get_mysql_connection():
@@ -18,13 +30,11 @@ def get_mysql_connection():
         print(f"Terjadi error: {err}")
         return None
 
-
-
-
 #koneksi mongodb
 
 def get_mongo_collections():
-    client = MongoClient("mongodb://localhost:27017/")
+    ip = socket.gethostbyname("LAPTOP-KINGIWAL.local")
+    client = MongoClient(f"mongodb://{ip}:27017/", serverSelectionTimeoutMS=5000)
     db = client["Aplikasi_Pendidikan"]
     return {
         "materi": db["Kumpulan_Materi"],

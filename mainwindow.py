@@ -4,8 +4,6 @@
 #     pyside2-uic form.ui -o ui_form.py
 # This Python file uses the following encoding: utf-8
 import sys
-import os
-import mysql.connector
 import globals
 import pandas as pd
 
